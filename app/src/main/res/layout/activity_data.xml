@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DataActivity">
+
+    <TableRow>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        <TextView
+            android:padding="10dip"
+            android:text="@string/label_years"/>
+
+        <RadioGroup
+            android:id="@+id/radioYears"
+            android:orientation="horizontal"
+            android:gravity="top|center"
+            android:paddingTop="10dip">
+            <RadioButton
+                android:id="@+id/ten"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ten"/>
+            <RadioButton
+                android:id="@+id/fifteen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/fifteen"/>
+            <RadioButton
+                android:id="@+id/twenty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/twenty"/>
+            <RadioButton
+                android:id="@+id/thirty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/thirty"/>
+
+        </RadioGroup>
+    </TableRow>
+    <TableRow>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        <TextView
+            android:text="@string/label_amount"
+            android:padding="10dip"/>
+        <EditText
+            android:id="@+id/data_amount"
+            android:inputType="numberDecimal"
+            android:text="@string/amountDecimal"/>
+    </TableRow>
+    <TableRow>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        <TextView
+            android:text="@string/label_down"
+            android:padding="10dip"/>
+        <EditText
+            android:id="@+id/data_down"
+            android:inputType="numberDecimal"
+            android:text="@string/downDecimal"
+            />
+    </TableRow>
+    <TableRow>
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        <TextView
+            android:text="@string/label_rate"
+            android:padding="10dip"/>
+        <EditText
+            android:id="@+id/data_rate"
+            android:inputType="numberDecimal"
+            android:text="@string/rate"
+            />
+    </TableRow>
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="left"
+        android:paddingTop="20dip">
+        <Button
+            android:layout_column="1"
+            android:gravity="center"
+            android:text="@string/apply"
+            android:onClick="goBack"
+
+
+                  />
+    </TableRow>
+</TableLayout>
